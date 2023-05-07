@@ -281,7 +281,7 @@ const Model = ((api, view) => {
             }
         
             // at least 1 letter will keep in the word
-            return new Set(arr.slice(0,rand(length)))
+            return new Set(arr.slice(0,rand(Math.min(3,length))))
             
             // For test. Give a word with only one blank.
             //return new Set(arr.slice(0,1))
