@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Word Guessing Game</title>
+    <script src="main.js" defer></script>
+    <link rel = "stylesheet" href = "main_styles.css">
+</head>
+<body>
+    <main>
+        <header>Word Guessing Game</header>
+        <br>
+
+        <div class="timer">
+                <span >Your time: </span>
+                <span id="timer-number">60</span>
+        </div>
+        <div class="counter">
+            <span id="counter">your chance: - / 10</span>
+        </div>
+        <br>
+
+        <div class = "guessed-history" id="guessed-history" hidden="hidden">
+            <span>Guessed history: </span>
+            <div class="guessed-history--letters">
+            </div>
+            <br>
+        </div>
+
+        <!-- <div class = "guessed-history" id="guessed-history">
+            <span>Guessed history: </span>
+            <div class="guessed-history--letters">
+                <span class="guessed-history--letters--true">A</span>
+                <span class="guessed-history--letters--false">B</span>
+                <span class="guessed-history--letters--true">C</span>
+                <span class="guessed-history--letters--false">D</span>
+            </div>
+            <br>
+        </div> -->
+        
+
+        <div class="flex-word-to-guess">
+            <span>W</span>
+            <span>A</span>
+            <span>I</span>
+            <span>T</span>
+            <span>...</span>
+            <!-- <p id="word-to-guess">WORD_TO_GUESS</p> -->
+        </div>
+        <br>
+
+        <div class="user-input">
+            <!-- <form id="user-input-form"> -->
+                <input id='user-input' type="text" maxlength="1" 
+                placeholder="only accept 1 lowercase letter" 
+                onInput="this.value=this.value.replace(/[^a-z]/g,'')"
+                >
+            <!-- </form> -->
+        </div>
+        <br>
+
+        <div class="btn-new-game">
+            <button id="btn-new-game">New Game</button>
+        </div>
+        <br>
+
+        <div class="success-list">
+            <p >You have successful guessed: </p>
+            <div id="success-list">
+                <p>No record. Start the game!</p>
+            </div>
+        </div>
+
+    </main>
+</body>
+</html>

@@ -1,0 +1,99 @@
+body {font-family: Arial}
+* {box-sizing: border-box}
+
+html,
+body {
+	font-size: 14pt;
+}
+
+body {
+	background: white;
+	font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+main {
+	max-width: 75%;
+	margin: auto;
+    text-align: center;
+}
+
+header {
+    font-size: 3rem;
+	border-bottom: 1px solid white;
+}
+
+h1 {
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+span {
+    font-size: 1.5rem;
+}
+
+p {
+	text-align: center;
+	font-size: 1rem;
+}
+
+.flex-word-to-guess {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-word-to-guess > span {
+    /* width: 5px; */
+    margin: 1%;
+    /* text-align: center;
+    line-height: 75px;
+    font-size: 30px; */
+}
+
+.guessed-history--letters {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.guessed-history--letters > span {
+    margin: 1%;
+}
+
+.guessed-history--letters--true {
+    color:green
+}
+
+.guessed-history--letters--false {
+    color:red
+}
+
+input[type=text]{
+    width: 60%;
+    padding: 15px;
+    display: inline-block;
+    border: inset;
+    border-radius: 5px;
+    background: white;
+}
+
+#btn-new-game {
+    background-color: #007BFF;
+    color: white;
+    border: inset;
+    border-radius: 5px;
+    padding: 15px;
+    font-weight: bold;
+    width: 40%;
+}
+
+#btn-new-game:hover {
+    background-color: #0056B3;
+    opacity:1;
+}
